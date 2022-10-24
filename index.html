@@ -21,13 +21,14 @@
         placeholder="Nom de l'oeuvre d'arts"
         required
       />
-      <input
-        type="text"
-        name="type"
-        id="type"
-        placeholder="Type d'oeuvres"
-        required
-      />
+      <!-- <input type="text" name="type" id="type" placeholder="Type d'oeuvres" required/> -->
+      <select name="type" id="type" disabled="disabled">
+        <option value="5">Dessin</option>
+        <option value="27">Sculpture</option>
+        <option value="35" selected="select">Peinture</option>
+        <option value="1205">Document historique</option>
+        <option value="0">Autres</option>
+      </select>
       <input
         type="number"
         name="annee"
@@ -36,7 +37,7 @@
         value="1920"
         required
       />
-      <input type="submit" value="Lancer l'animation" />
+      <input type="submit" value="Lancer l'animation" required />
     </form>
   </body>
 </html>
